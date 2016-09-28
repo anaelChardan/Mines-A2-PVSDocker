@@ -12,4 +12,4 @@ RUN apt-get update && apt-get install -y curl build-essential emacs \
     && sed -i 's#PVSPATH=/home/owre/pvs.git#PVSPATH=/pvs#' /pvs/provethem \
     && chmod u+w /pvs/pvs /pvs/pvsio /pvs/proveit /pvs/provethem \
     && chmod a+x /pvs/pvs /pvs/pvsio /pvs/proveit /pvs/provethem \
-    && echo "alias pvs=\"/pvs/bin/pvs\" >> /root/.bashrc"
+    && echo "alias pvs=\"/pvs/pvs\"" >> /root/.bashrc
