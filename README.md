@@ -14,3 +14,8 @@ It his also on Dockerhub so you can simply do :
 docker run -v `pwd`:/home/work -it prygan/pvs-docker bin/bash
 ```
 
+To run PVS, just type : 
+```
+pvs
+```
+
