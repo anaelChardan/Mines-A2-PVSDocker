@@ -8,7 +8,7 @@ docker build -t pvs-container .
 docker run -v `pwd`:/home/work -it pvs-container bin/bash
 ```
 
-It his also on Dockerhub so you can simply do : 
+It is also on Dockerhub so you can simply do : 
 
 ```
 docker run -v `pwd`:/home/work -it prygan/pvs-docker bin/bash
