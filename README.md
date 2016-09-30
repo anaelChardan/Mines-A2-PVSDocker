@@ -1,21 +1,28 @@
-#PVS-Docker
+# PVS-Docker
 This is a docker container for the verification system PVS (http://pvs.csl.sri.com/)
 
-To run it, you should do :
+## Manual build
 
 ```
-docker build -t pvs-container .
-docker run -v `pwd`:/home/work -it pvs-container bin/bash
+$ docker build -t pvs-container .
+$ docker run -v `pwd`:/home/work -it pvs-container
 ```
 
-It is also on Dockerhub so you can simply do : 
+## Use via docker hub
+
+### Launch bash shell
 
 ```
-docker run -v `pwd`:/home/work -it prygan/pvs-docker bin/bash
+$ docker run -v `pwd`:/home/work -it prygan/pvs-docker
 ```
 
 To run PVS, just type : 
 ```
-pvs
+$ pvs
 ```
 
+### Launch PVS 
+
+```
+$ docker run -v `pwd`:/home/work -it prygan/pvs-docker /pvs/pvs
+```
